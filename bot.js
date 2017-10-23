@@ -1,36 +1,5 @@
 const Discord = require('discord.js'),
 client = new Discord.Client();
-token = "MzMwMDY3ODc5MjI1NTg5NzYy.DM7i9w.e7QvO-iEBVGXpQnEjm2Lclb8HoI",
-express = require("express"),
-prefix = 'z!',
-app = express(),
-yt = require("./youtube-plugin"),
-youtube_plugin = new yt(),
-AuthDetails = require("./auth.json"),
-Music = require("./Music.js"),
-ffmpeg = require("ffmpeg"),
-moment = require("moment");
-music = new Music(),
-opts = {
-	maxResults: 3,
-	key: AuthDetails.youtube_api_key
-};
-
-var colors = require('colors');
-colors.setTheme({
-  silly: 'rainbow',
-  input: 'orenge',
-  verbose: 'cyan',
-  prompt: 'grey',
-  info: 'green',
-  data: 'grey',
-  help: 'cyan',
-  warn: 'yellow',
-  debug: 'blue',
-  error: 'red'
-});
-
-//Tout les truck qu'on a besoin pour les prochaines commandes
 
 client.on('ready' , () => {
 	var memberCount = client.users.size;
