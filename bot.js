@@ -1,7 +1,6 @@
 const Discord = require('discord.js'),
 client = new Discord.Client();
 prefix = 'z!',
-app = express(),
 yt = require("./youtube-plugin"),
 youtube_plugin = new yt(),
 AuthDetails = require("./auth.json"),
