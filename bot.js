@@ -225,4 +225,4 @@ voiceChannel.leave()
 
 
 app.listen(AuthDetails.port);
-client.login(process.env.B0T_T0KEN)
+client.login(process.env.BOT_TOKEN)
