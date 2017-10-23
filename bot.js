@@ -1,6 +1,5 @@
 const Discord = require('discord.js'),
 client = new Discord.Client();
-token = "MzMwMDY3ODc5MjI1NTg5NzYy.DM7i9w.e7QvO-iEBVGXpQnEjm2Lclb8HoI",
 express = require("express"),
 prefix = 'z!',
 app = express(),
