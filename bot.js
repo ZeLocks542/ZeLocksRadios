@@ -1,6 +1,18 @@
 const Discord = require('discord.js'),
 client = new Discord.Client();
 prefix = 'z!',
+app = express(),
+yt = require("./youtube-plugin"),
+youtube_plugin = new yt(),
+AuthDetails = require("./auth.json"),
+Music = require("./Music.js"),
+ffmpeg = require("ffmpeg"),
+moment = require("moment");
+music = new Music(),
+opts = {
+	maxResults: 3,
+	key: AuthDetails.youtube_api_key
+};
 
 client.on('ready' , () => {
 	var memberCount = client.users.size;
